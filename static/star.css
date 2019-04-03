@@ -1,0 +1,164 @@
+
+/* ------------------- Common ------------------- */
+body, html {
+    margin: 0;
+    background-color: white;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* copyright */
+.cp-right {
+    background: #1c1d21;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.cp-right p {
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.cp-right p a {
+    color: #eee;
+}
+
+.cp-right p a:hover {
+    color: #ff6b6b;
+}
+
+img {
+    max-width:100%;
+    height: auto;
+}
+
+/* ------------------- Home page (star_index.html) ------------------- */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95%;
+    display: inline-block;
+    position: relative;
+    outline: 0;
+}
+
+/* The image used as background in hero-image div is obtained from a copyright-free source.*/
+
+.logo-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    margin-top: 2em;
+    margin-left: 3em;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+.logo-active:hover {
+    transform: scale(1.5); 
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    display: block;
+    font-size: 52px;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.hero-text button {
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 20px;
+    color: rgb(52, 16, 151);
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.hero-text button:hover {
+    background-color: rgb(52, 16, 151);
+    color: white;
+}
+
+/* ------------------- Respond page (star_story.html) ------------------- */
+.banner {
+    background-image: url("banner.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    display: inline-block;
+    position: relative;
+}
+
+/* 
+    The image used as background in banner div is obtained from a copyright-free source.
+    Some post processing has been done to the original copyright-free image. 
+*/
+
+.logo {
+    width: 50px;
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-bottom: 2em;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+.logo:hover {
+    transform: scale(1.5); 
+}
+
+#box {
+    width: 75%;
+    margin: auto;
+    background: #fff;
+    overflow: hidden;
+    padding: 15px;
+}
+
+#box-title {
+    text-align: center;
+}
+
+#box-title h3 {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#box-title p {
+    font-size: 0.8em;
+    color: #636363;
+    margin-bottom: 3em;
+}
+
+#box-para {
+    text-align: justify;
+    line-height: 150%;
+}
+
+figcaption {
+    font-size: 0.8em;
+    color: #636363;  
+}
