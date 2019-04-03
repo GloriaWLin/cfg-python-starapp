@@ -1,0 +1,31 @@
+{% include "star_header.html" %}
+
+    <!-- a hero image as the container of all the contents in the home page -->
+    <div class="hero-image"> 
+      
+      <!-- logo = home button -->
+      <a href="{{root_url}}"><img class="logo-active" src="static/star_logo_active.png"></a>
+
+      <div class="hero-text">
+        
+        <!-- main message -->
+        <h1>A story a day, about stars</h1>
+
+        <!-- forms & corresponding buttons -->
+        <form method="get" action="{{ url_for('today') }}" id="todayform"></form>
+
+        <form action="{{ url_for('response') }}" method="post" id="dateform">
+          Day: <input type="text" name="day" placeholder="DD">
+          Month: <input type="text" name="month" placeholder="MM">
+          Year: <input type="year" name="year" placeholder="YYYY (from 1996 onwards)"><br/>
+        </form>
+
+        <br/>
+        <button type="submit" form="dateform">Pick a Date</button>
+        <button type="submit" form="todayform" >Today's Story</button>
+        <br/>
+
+      </div>
+    </div>
+
+{% include "star_footer.html" %}

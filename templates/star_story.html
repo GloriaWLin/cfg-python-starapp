@@ -1,0 +1,39 @@
+{% include "star_header.html" %}
+        
+        <!-- a banner -->
+        <div class="banner">
+
+            <!-- logo = home button -->
+            <a href="{{root_url}}"><img class="logo" src="static/star_logo.png"></a>
+
+        </div>
+
+        <!-- a box containing the major content the 'story' -->
+        <div id="box">
+
+            <!-- title -->
+            <div id="box-title">
+                <h3>{{pic_title}}</h3>
+                <p>{{date}}</p>
+            </div>
+
+            <!-- a paragraph of description -->
+            <div id="box-para">
+                <p>{{description}}</p>
+            </div>
+            
+            <!-- the actual 'astronomy picture of the day' -->
+            <figure>
+
+                <!-- link the image to its HD quality version -->
+                <a href="{{hdlink}}"><img src="{{picture}}"></a>
+
+                <!-- include image copyright info only when it is provided -->
+                {% if cpr %}
+                    <figcaption>Image copyright: {{cpr}}</figcaption>
+                {% endif %}
+            </figure> 
+            
+        </div>
+        
+{% include "star_footer.html" %}
