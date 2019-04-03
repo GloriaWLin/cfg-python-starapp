@@ -1,0 +1,2 @@
+web: python app_star.py
+heroku ps:scale web=1
